@@ -4,30 +4,39 @@ Bem vindo ao projeto SistemaMultiAgente base sobre uso de sistemas multi agentes
 
 ### Instalando
 
-`git clone`
+`git clone https://github.com/lucas-althoff/sistema_multi_agentes.git`
 
+- Boa prática: Crie um ambiente para instalar crewai sem gerar conflitos!
 
-### Customizing
+`pip install crewai`
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+`crewai run`
 
-- Modify `src/sistema_multi_agentes/config/agents.yaml` to define your agents
-- Modify `src/sistema_multi_agentes/config/tasks.yaml` to define your tasks
-- Modify `src/sistema_multi_agentes/crew.py` to add your own logic, tools and specific args
-- Modify `src/sistema_multi_agentes/main.py` to add custom inputs for your agents and tasks
+### Personalizando
 
-## Running the Project
+**Adicione sua `GEMINI_API_KEY` no arquivo `.env`**
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+- Modifique `src/sistema_multi_agentes/config/agents.yaml` para definir seus agentes
+- Modifique `src/sistema_multi_agentes/config/tasks.yaml` para definir suas tarefas
+- Modifique `src/sistema_multi_agentes/crew.py` para adicionar sua própria lógica, ferramentas e argumentos específicos
+- Modifique `src/sistema_multi_agentes/main.py` para adicionar entradas personalizadas para seus agentes e tarefas
+
+## Executando o Projeto
+
+Para iniciar sua equipe de agentes de IA e começar a execução das tarefas, execute isto a partir da pasta raiz do seu projeto:
 
 ```bash
 $ crewai run
 ```
 
-This command initializes the sistema_multi_agentes Crew, assembling the agents and assigning them tasks as defined in your configuration.
+Este comando inicializa a Crew do sistema_multi_agentes, montando os agentes e atribuindo-lhes tarefas conforme definido em sua configuração.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+Este exemplo, não modificado, criará um arquivo `results/report.md` com a saída de uma pesquisa sobre LLMs na pasta raiz.
 
-## Understanding Your Crew
+## Entendendo sua Equipe (Crew)
 
-The sistema_multi_agentes Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+A Crew do sistema_multi_agentes é composta por múltiplos agentes de IA, cada um com papéis, metas e ferramentas únicas. Esses agentes colaboram em uma série de tarefas, definidas em `config/tasks.yaml`, aproveitando suas habilidades coletivas para alcançar objetivos complexos. O arquivo `config/agents.yaml` descreve as capacidades e configurações de cada agente em sua equipe.
+
+## Outros projetos
+
+Para que você experimente a configuração de outras equipes de múltiplos agentes foram adicionados cenários na pasta `exemplos_crews`
