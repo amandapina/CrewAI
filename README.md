@@ -2,6 +2,13 @@
 
 Bem vindo ao projeto SistemaMultiAgente base sobre uso de sistemas multi agentes baseados em LLM com a ferramenta crewAI.
 
+### Exemplo
+
+Neste exemplo você vai encontrar uma equipe de pesquisa esportiva, composta por um pesquisador e um analista esportivo.
+
+![Exemplo sistema com equipe de IA como componente](https://github.com/lucas-althoff/sistema_multi_agentes/blob/main/crew_pesquisa_futebol.png)
+
+
 ### Instalando
 
 `git clone https://github.com/lucas-althoff/sistema_multi_agentes.git`
