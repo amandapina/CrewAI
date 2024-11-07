@@ -17,8 +17,6 @@ Neste exemplo você vai encontrar uma equipe de pesquisa esportiva, composta por
 
 `pip install crewai`
 
-`crewai run`
-
 ### Personalizando
 
 **Adicione sua `GEMINI_API_KEY` no arquivo `.env`**
@@ -33,7 +31,7 @@ Neste exemplo você vai encontrar uma equipe de pesquisa esportiva, composta por
 Para iniciar sua equipe de agentes de IA e começar a execução das tarefas, execute isto a partir da pasta raiz do seu projeto:
 
 ```bash
-$ crewai run
+$ python src\sistema_multi_agentes\main.py
 ```
 
 Este comando inicializa a Crew do sistema_multi_agentes, montando os agentes e atribuindo-lhes tarefas conforme definido em sua configuração.
