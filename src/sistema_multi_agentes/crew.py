@@ -49,13 +49,15 @@ class SistemaMultiAgentesCrew():
 	def research_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['research_task'],
+			verbose=True
 		)
 
 	@task
 	def reporting_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['reporting_task'],
-			output_file='results/report.md'
+			output_file='results/report.md',
+			verbose=True
 		)
 
 	@crew
